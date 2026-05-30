@@ -17,25 +17,25 @@ DULRNet contains three main stages. First, a multi-scale dual-branch LRSD encode
 **Multi-scale dual-branch LRSD encoder.** This module unfolds the iterative LRSD process into learnable stages. The main branch works at the original resolution to preserve fine spatial details, while the auxiliary branch captures broader contextual information through downsampling. The two branches share weights to encourage scale-consistent representations.
 
 <p align="center">
-  <img src="framework/wang3.jpg" alt="Dual-branch LRSD encoder" width="720">
+  <img src="framework/wang3.jpg" alt="Dual-branch LRSD encoder" width="620">
 </p>
 
 **Context-aware gated fusion module.** Directly merging multi-scale features may introduce redundant or noisy information. The gated fusion module learns spatially adaptive masks to filter auxiliary low-rank features and reduce cross-scale interference before reconstruction.
 
 <p align="center">
-  <img src="framework/wang4.png" alt="Context-aware gated fusion module" width="820">
+  <img src="framework/wang4.png" alt="Context-aware gated fusion module" width="700">
 </p>
 
 **Asymmetric bidirectional cross-modal attention.** Infrared and visible images carry different physical priors. This module uses asymmetric cross-modal guidance to strengthen infrared saliency and visible structural gradients in a differentiated way, helping the network reduce modality conflict while retaining complementary information.
 
 <p align="center">
-  <img src="framework/wang5.png" alt="Cross-modal synergistic attention module" width="820">
+  <img src="framework/wang5.png" alt="Cross-modal synergistic attention module" width="700">
 </p>
 
 **Enhanced decoder.** The decoder aggregates enhanced low-rank and sparse representations and reconstructs the final fused image. It uses feature refinement and residual compensation to preserve thermal intensity and visible texture details.
 
 <p align="center">
-  <img src="framework/wang6.png" alt="Enhanced decoder" width="820">
+  <img src="framework/wang6.png" alt="Enhanced decoder" width="700">
 </p>
 
 ## Environment

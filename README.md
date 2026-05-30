@@ -38,9 +38,7 @@ pip install torch torchvision numpy opencv-python scikit-image matplotlib timm e
 
 ## Dataset
 
-The MSRS dataset can be obtained from:
-
-https://github.com/Linfeng-Tang/MSRS
+The MSRS dataset can be obtained from [Linfeng-Tang/MSRS](https://github.com/Linfeng-Tang/MSRS).
 
 Prepare the MSRS dataset as follows:
 
@@ -56,16 +54,7 @@ MSRS-main/
 
 ## Training
 
-The default MSRS paths in `args.py` are:
-
-```text
-train_ir_dir = './MSRS-main/train/ir'
-train_vi_dir = './MSRS-main/train/vi'
-test_ir_dir  = './MSRS-main/test/ir'
-test_vi_dir  = './MSRS-main/test/vi'
-```
-
-Then run:
+Run:
 
 ```bash
 python training_dulrnet.py
@@ -96,10 +85,6 @@ Fusion results are saved to:
 ```text
 outputs/DULRNet
 ```
-
-## Citation
-
-If this code is helpful for your research, please cite the related paper when it becomes available.
 
 ## Contact
 

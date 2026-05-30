@@ -40,18 +40,6 @@ pip install torch torchvision numpy opencv-python scikit-image matplotlib timm e
 
 The MSRS dataset can be obtained from [Linfeng-Tang/MSRS](https://github.com/Linfeng-Tang/MSRS).
 
-Prepare the MSRS dataset as follows:
-
-```text
-MSRS-main/
-|-- train/
-|   |-- ir/
-|   `-- vi/
-`-- test/
-    |-- ir/
-    `-- vi/
-```
-
 ## Training
 
 Train DULRNet with:

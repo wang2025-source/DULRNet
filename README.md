@@ -30,8 +30,6 @@ TorchVision 0.23.0
 CUDA 12.8
 ```
 
-Main dependencies include `numpy`, `opencv-python`, `scikit-image`, `matplotlib`, `timm`, `einops`, `pytorch-msssim`, `tensorboard`, and `tqdm`.
-
 Install the main packages with:
 
 ```bash
@@ -40,27 +38,27 @@ pip install torch torchvision numpy opencv-python scikit-image matplotlib timm e
 
 ## Dataset
 
-Prepare paired infrared and visible images using the directory layout configured in `args.py`:
+Prepare the MSRS dataset as follows:
 
 ```text
 MSRS-main/
-├── train/
-│   ├── ir/
-│   └── vi/
-└── test/
-    ├── ir/
-    └── vi/
+|-- train/
+|   |-- ir/
+|   `-- vi/
+`-- test/
+    |-- ir/
+    `-- vi/
 ```
 
 ## Training
 
-Check and update paths or hyperparameters in `args.py`, especially:
+The default MSRS paths in `args.py` are:
 
 ```text
-train_ir_dir
-train_vi_dir
-save_model_dir
-vgg_model_path
+train_ir_dir = './MSRS-main/train/ir'
+train_vi_dir = './MSRS-main/train/vi'
+test_ir_dir  = './MSRS-main/test/ir'
+test_vi_dir  = './MSRS-main/test/vi'
 ```
 
 Then run:

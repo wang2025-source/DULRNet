@@ -40,6 +40,10 @@ pip install torch torchvision numpy opencv-python scikit-image matplotlib timm e
 
 The MSRS dataset can be obtained from [Linfeng-Tang/MSRS](https://github.com/Linfeng-Tang/MSRS).
 
+## VGG-16 model
+
+[google drive](https://drive.google.com/file/d/1l3ieFhtgXd_R0alXr42RNQUTy1GSeNBg/view?usp=drive_link)
+
 ## Training
 
 Train DULRNet with:

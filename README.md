@@ -54,37 +54,21 @@ MSRS-main/
 
 ## Training
 
-Run:
+Train DULRNet with:
 
 ```bash
 python training_dulrnet.py
 ```
 
-The default VGG path is:
-
-```text
-model/vgg/vgg16.pth
-```
-
 ## Testing
 
-Place the trained model at:
-
-```text
-model/dulrnet_final.pth
-```
-
-Then run:
+Test DULRNet with:
 
 ```bash
 python testing_dulrnet.py
 ```
 
-Fusion results are saved to:
-
-```text
-outputs/DULRNet
-```
+The fusion results will be saved in `outputs/DULRNet`.
 
 ## Contact
 

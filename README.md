@@ -30,12 +30,6 @@ TorchVision 0.23.0
 CUDA 12.8
 ```
 
-Install the main packages with:
-
-```bash
-pip install torch torchvision numpy opencv-python scikit-image matplotlib timm einops pytorch-msssim tensorboard tqdm
-```
-
 ## Dataset
 
 [MSRS](https://github.com/Linfeng-Tang/MSRS) is utilized to train DULRNet.
